@@ -1,0 +1,20 @@
+[project]
+name = "my-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pabi9625", email = "pabilankumarathass@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.46.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+my-agent = "my_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
